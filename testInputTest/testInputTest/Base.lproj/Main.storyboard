@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="testInputTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LSU-DA-SbE">
+                                <rect key="frame" x="40" y="290" width="295" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SwX-31-sLQ">
+                                <rect key="frame" x="60" y="390.5" width="255" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nsc-Jr-hy5">
+                                <rect key="frame" x="164.5" y="520.5" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="changeLabel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GEe-uj-716"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.51128950448555066" green="1" blue="0.1394963646346874" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="SwX-31-sLQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="1lS-Wz-syf"/>
+                            <constraint firstItem="Nsc-Jr-hy5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EIa-da-Ivs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SwX-31-sLQ" secondAttribute="trailing" constant="60" id="J0J-ED-gTi"/>
+                            <constraint firstItem="Nsc-Jr-hy5" firstAttribute="top" secondItem="SwX-31-sLQ" secondAttribute="bottom" constant="100" id="Lta-YA-t0T"/>
+                            <constraint firstItem="LSU-DA-SbE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="XPS-LQ-egy"/>
+                            <constraint firstItem="LSU-DA-SbE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="300" id="Yze-Zc-F8b"/>
+                            <constraint firstItem="LSU-DA-SbE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="270" id="a8e-T3-hrl"/>
+                            <constraint firstItem="SwX-31-sLQ" firstAttribute="top" secondItem="LSU-DA-SbE" secondAttribute="bottom" constant="30" id="eFF-eo-5KO"/>
+                            <constraint firstItem="SwX-31-sLQ" firstAttribute="top" secondItem="LSU-DA-SbE" secondAttribute="bottom" constant="80" id="heB-s9-0VP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LSU-DA-SbE" secondAttribute="trailing" constant="40" id="sAM-vW-lcm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="inputField" destination="SwX-31-sLQ" id="9DG-NZ-36k"/>
+                        <outlet property="textLabel" destination="LSU-DA-SbE" id="5a9-aB-aJq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
